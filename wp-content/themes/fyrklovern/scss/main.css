@@ -1,3 +1,6 @@
+/* 
+--------Different colors--------
+*/
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,100&family=Libre+Baskerville&family=Montserrat&display=swap");
 h2, h3 {
   font-family: "Libre Baskerville", serif;
@@ -7,12 +10,107 @@ p, a {
   font-family: "Montserrat", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* 
 --------Different colors--------
 */
 .headerpage {
   background: transparent;
   display: flex;
+  align-items: center;
+}
+
+.style-header__left {
+  width: 40%;
+}
+.style-header__left ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.style-header__left ul li:hover {
+  text-decoration: underline;
+}
+.style-header__left ul li {
+  position: relative;
+  padding: 10px 0;
+}
+.style-header__left ul li a {
+  text-decoration: none;
+  color: #353434;
+}
+.style-header__left .sub-menu {
+  display: none;
+}
+.style-header__left ul li:hover .sub-menu li {
+  margin: 0 0 10px 0;
+  z-index: 5;
+  position: relative;
+}
+.style-header__left ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: #617C7C;
+  width: 10rem;
+  padding: 20px;
+}
+.style-header__left ul li:hover .sub-menu::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0.5px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+.style-header__title {
+  width: 20%;
+  text-align: center;
+}
+.style-header__title a {
+  font-family: "Libre Baskerville", serif;
+  color: #353434;
+  text-decoration: none;
+}
+.style-header__right {
+  width: 40%;
+}
+.style-header__right ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.style-header__right ul li a {
+  text-decoration: none;
+  color: #353434;
+}
+.style-header__right #menu-item-40 {
+  position: absolute;
+  right: 1.5rem;
+}
+.style-header__right #menu-item-36 {
+  display: block;
+  position: absolute;
+  right: 3.7rem;
+}
+.style-header__right #menu-item-35 {
+  display: block;
+  position: absolute;
+  right: 16rem;
+}
+.style-header__right #menu-item-35:hover {
+  text-decoration: underline;
 }
 
 .footer-container {
