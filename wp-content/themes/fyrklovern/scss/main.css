@@ -4,10 +4,53 @@
   display: flex;
 }
 
+.style-header__left {
+  width: 30rem;
+  border: 1px solid black;
+}
+.style-header__left ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.style-header__left ul li {
+  position: relative;
+}
+.style-header__left .sub-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+.style-header__left .sub-menu ul {
+  display: block;
+  margin: 10px;
+}
+.style-header__left ul li:hover .sub-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 3px 10px;
+  padding: 5px;
+}
+.style-header__title {
+  border: 1px solid black;
+  width: 20rem;
+  text-align: center;
+}
+.style-header__right ul {
+  display: flex;
+}
+
 h2 {
   font-family: "Libre Baskerville", serif;
 }
 
 p {
   font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */
