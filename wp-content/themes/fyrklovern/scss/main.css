@@ -78,6 +78,11 @@ p, a {
   width: 20%;
   text-align: center;
 }
+.style-header__title a {
+  font-family: "Libre Baskerville", serif;
+  color: #353434;
+  text-decoration: none;
+}
 .style-header__right {
   width: 40%;
 }

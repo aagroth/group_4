@@ -15,7 +15,7 @@
     </div> 
 
     <div class="style-header__title">
-        <h2 ><?php echo get_bloginfo( 'name' ); ?></h2>
+        <h2><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h2>
     </div>
 
     <div class="style-header__right">
