@@ -10,3 +10,5 @@ add_theme_support('post-thumbnails');
 
 register_nav_menus(array('main-menu-left' => 'Main menu left'));
 register_nav_menus(array('main-menu-right' => 'Main menu right'));
+register_nav_menus(array('footer-menu-right' => 'Footer menu right'));
+register_nav_menus(array('footer-menu-left' => 'Footer menu left'));
