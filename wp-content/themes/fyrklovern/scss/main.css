@@ -1,13 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,100&family=Libre+Baskerville&family=Montserrat&display=swap");
+h2, h3 {
+  font-family: "Libre Baskerville", serif;
+}
+
+p, a {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* 
+--------Different colors--------
+*/
 .headerpage {
   background: transparent;
   display: flex;
 }
 
-h2 {
-  font-family: "Libre Baskerville", serif;
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #617C7C;
+  height: 371px;
+  color: white;
 }
-
-p {
-  font-family: "Montserrat", sans-serif;
+.footer-container h2 {
+  padding-top: 100px;
+  padding-right: 80px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer-container .footer-inner-container {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-top: 100px;
+}
+.footer-container .footer-inner-container .footer-right-box {
+  padding-left: 147px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.footer-container .footer-inner-container .footer-right-box ul {
+  padding: 0;
+}
+.footer-container .footer-inner-container .footer-right-box li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+.footer-container .footer-inner-container .footer-right-box a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-container .footer-inner-container .footer-left-box {
+  padding-left: 147px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.footer-container .footer-inner-container .footer-left-box ul {
+  padding: 0;
+}
+.footer-container .footer-inner-container .footer-left-box li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+.footer-container .footer-inner-container .footer-left-box a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
