@@ -1,0 +1,64 @@
+// Styling for footer content
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $dark-green-background;
+    height: 371px;
+    color: white;
+
+    h2 {
+        padding-top: 100px;
+        padding-right: 80px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .footer-inner-container {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        padding-top: 100px;
+
+        .footer-right-box {
+            padding-left: 147px;
+            font-size: 20px;
+            font-weight: 700;
+            ul {
+                padding: 0;
+            }
+            li {
+                list-style-type: none;
+                padding-bottom: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        .footer-left-box {
+            padding-left: 147px;
+            font-size: 20px;
+            font-weight: 700;
+            ul {
+                padding: 0;
+            }
+            li {
+                list-style-type: none;
+                padding-bottom: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}
