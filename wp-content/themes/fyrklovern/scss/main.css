@@ -188,4 +188,23 @@ p, a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.info-block-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-block-container h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 757px;
+  text-align: center;
+}
+
+.info-block-container p {
+  margin-bottom: 30px;
+  width: 757px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
