@@ -16,6 +16,15 @@ p, a {
   box-sizing: border-box;
 }
 
+.wp-block-buttons .wp-block-button {
+  margin-bottom: 50px;
+  background-color: #617C7C;
+}
+
+.wp-block-button__link {
+  background-color: #617C7C;
+}
+
 /* 
 --------Different colors--------
 */
