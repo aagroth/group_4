@@ -30,5 +30,14 @@ function my_acf_init_block_types() {
             'icon'              => 'format-image',
             'keywords'          => array( 'hero', 'heroimage' ),
         ));
+        acf_register_block_type(array(
+            'name'              => 'info_block',
+            'title'             => __('Info block'),
+            'description'       => __('A block for with heading and paragraph'),
+            'render_template'   => 'page-blocks/info-block.php',
+            'category'          => 'formatting',
+            'icon'              => 'format-image',
+            'keywords'          => array( 'info block' ),
+        ));
     }
 }
