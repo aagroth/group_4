@@ -16,6 +16,15 @@ p, a {
   box-sizing: border-box;
 }
 
+.wp-block-buttons .wp-block-button {
+  margin-bottom: 50px;
+  background-color: #617C7C;
+}
+
+.wp-block-button__link {
+  background-color: #617C7C;
+}
+
 /* 
 --------Different colors--------
 */
@@ -188,4 +197,23 @@ p, a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.info-block-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-block-container h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 757px;
+  text-align: center;
+}
+
+.info-block-container p {
+  margin-bottom: 30px;
+  width: 757px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
