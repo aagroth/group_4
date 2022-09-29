@@ -1,35 +1,34 @@
 .page-store-section {
-    background: $light-green-background;
+  background: $light-green-background;
 }
 .title-content {
-    margin-bottom: 80px;
-    &__h2 {
-        padding-top: 120px;
-    }
+  margin-bottom: 80px;
+  &__h2 {
+    padding-top: 120px;
+  }
 }
-
 
 .store-grid {
-    display: grid;
-    justify-content: center;
-    grid-gap: 20px; 
-    grid-template-columns: 310px 310px 310px;
-    padding-bottom: 180px;
+  display: grid;
+  justify-content: center;
+  grid-gap: 20px;
+  grid-template-columns: 310px 310px 310px;
+  padding-bottom: 180px;
 
-    &__child {
-        background: $white-background;
-        padding: 20px; 
-        width: 300px;
-        height: 330px;
+  &__child {
+    background: $white-background;
+    padding: 20px;
+    width: 300px;
+    height: 330px;
 
-        h2 {
-            margin-bottom: 20px;
-        }
+    h2 {
+      padding-bottom: 40px;
     }
+  }
 }
 .post-zipcode {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .hours {
-    padding-top: 20px;
+  padding-top: 20px;
 }

@@ -243,7 +243,7 @@ p, a {
   height: 330px;
 }
 .store-grid__child h2 {
-  margin-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .post-zipcode {
