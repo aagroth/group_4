@@ -41,3 +41,20 @@ function my_acf_init_block_types() {
         ));
     }
 }
+
+// Create custom post types 
+function create_posttype() {
+    register_post_type( 'wpll_store',
+      array(
+        'labels' => array(
+          'name' => __( 'Stores' ),
+          'singular_name' => __( 'Store' )
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'store'),
+      )
+    );
+  }
+  add_action( 'init', 'create_posttype' );
+
