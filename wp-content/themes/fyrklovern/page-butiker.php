@@ -9,18 +9,26 @@
         'post_type' => 'wpll_store'
     ));
     ?> <div class="store-grid"> 
-        <?php
-            while ($stores->have_posts()) { $stores->the_post(); 
-        ?>
+
+<?php if ( $stores->have_posts() ) : while ( $stores->have_posts() ) : $stores->the_post(); ?>
             <div class="store-grid__child">
                 <h2><?php the_title() ?></h2>
-                <p><?php the_content() ?></p>
+                <p><?php the_field('phone'); ?></p>
+                <p><?php the_field('street'); ?></p>
+                <p class="post-zipcode"><?php the_field('zipcode'); ?></p>
+                <p class="post-hours"><?php the_field('hours'); ?></p>
+                <p><?php the_field('weekdays'); ?></p>
+                <p><?php the_field('friday'); ?></p>
+                <p><?php the_field('saturday'); ?></p>
+                <p><?php the_field('sunday'); ?></p>
             </div>
         <?php
-        }
+        endwhile;
+    endif;
+
+        wp_reset_postdata();
         ?>
     </div>
 </section>
-<?php
-?>
+
 <?php get_footer() ?>
