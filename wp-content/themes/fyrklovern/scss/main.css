@@ -218,6 +218,7 @@ p, a {
   text-align: center;
 }
 
+
 .fullwidth-image-block {
   width: 100%;
   height: 436px;
@@ -258,4 +259,40 @@ p, a {
   z-index: 101;
   text-align: center;
   color: #353434;
+
+.page-store-section {
+  background: #BFC7C7;
+}
+
+.title-content {
+  margin-bottom: 80px;
+}
+.title-content__h2 {
+  padding-top: 120px;
+}
+
+.store-grid {
+  display: grid;
+  justify-content: center;
+  grid-gap: 20px;
+  grid-template-columns: 310px 310px 310px;
+  padding-bottom: 180px;
+}
+.store-grid__child {
+  background: #FFFFFF;
+  padding: 20px;
+  width: 300px;
+  height: 330px;
+}
+.store-grid__child h2 {
+  padding-bottom: 40px;
+}
+
+.post-zipcode {
+  padding-bottom: 40px;
+}
+
+.post-hours {
+  padding-top: 25px;
+
 }/*# sourceMappingURL=main.css.map */
