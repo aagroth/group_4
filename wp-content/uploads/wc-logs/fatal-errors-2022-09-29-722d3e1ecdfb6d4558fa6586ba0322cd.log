@@ -1,0 +1,16 @@
+2022-09-29T14:17:30+00:00 CRITICAL Uncaught Error: Call to undefined function page_title() in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/index.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/fyrklovern/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/fyrklovern/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/fyrklovern/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/index.php on line 3
+
+2022-09-29T14:18:01+00:00 CRITICAL Uncaught Error: Call to undefined function page_title() in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/index.php:5
+Stack trace:
+#0 /Applications/MAMP/htdocs/fyrklovern/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/fyrklovern/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/fyrklovern/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/index.php on line 5
+
