@@ -1,7 +1,7 @@
 <?php get_header() ?>
 <section class="page-store-section">
     <div class="title-content">
-        <h2 class="title-content__h2"> <?php the_content() ?> </h2>
+        <?php the_content() ?> 
     </div>
     <?php
     $stores = new WP_Query(array(

@@ -218,7 +218,6 @@ p, a {
   text-align: center;
 }
 
-
 .fullwidth-image-block {
   width: 100%;
   height: 436px;
@@ -259,6 +258,7 @@ p, a {
   z-index: 101;
   text-align: center;
   color: #353434;
+}
 
 .page-store-section {
   background: #BFC7C7;
@@ -267,8 +267,9 @@ p, a {
 .title-content {
   margin-bottom: 80px;
 }
-.title-content__h2 {
-  padding-top: 120px;
+
+.title-content h2 {
+  padding-top: 100px;
 }
 
 .store-grid {
@@ -294,5 +295,4 @@ p, a {
 
 .post-hours {
   padding-top: 25px;
-
 }/*# sourceMappingURL=main.css.map */
