@@ -39,6 +39,15 @@ function my_acf_init_block_types() {
             'icon'              => 'format-image',
             'keywords'          => array( 'info block' ),
         ));
+        acf_register_block_type(array(
+            'name'              => 'fullwidth_image_block',
+            'title'             => __('Fullwidth image block'),
+            'description'       => __('A block with a fullwidth image with heading and paragraph'),
+            'render_template'   => 'page-blocks/fullwidth-image-block.php',
+            'category'          => 'formatting',
+            'icon'              => 'format-image',
+            'keywords'          => array( 'fullwidth image block' ),
+        ));
     }
 }
 
