@@ -2,7 +2,7 @@
 --------Different colors--------
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,100&family=Libre+Baskerville&family=Montserrat&display=swap");
-h2, h3 {
+h1, h2, h3 {
   font-family: "Libre Baskerville", serif;
 }
 
@@ -363,4 +363,44 @@ p, a {
 }
 .posts-wrapper__text a:hover {
   text-decoration: underline;
+}
+
+.page-single__date {
+  display: flex;
+  justify-content: center;
+}
+.page-single__date p {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.page-single__title {
+  display: flex;
+  justify-content: center;
+}
+.page-single__title h1 {
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+.page-single__image {
+  width: 900px;
+  height: 520px;
+  margin: auto;
+}
+.page-single__image img {
+  width: 100%;
+  height: 100%;
+}
+.page-single__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-single__content p {
+  max-width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.page-single__content a {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
