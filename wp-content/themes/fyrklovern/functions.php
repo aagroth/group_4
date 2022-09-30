@@ -67,3 +67,6 @@ function create_posttype() {
   }
   add_action( 'init', 'create_posttype' );
 
+  // Add theme support for post image 
+  add_theme_support('post-thumbnails');
+
