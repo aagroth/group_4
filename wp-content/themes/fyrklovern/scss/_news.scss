@@ -53,5 +53,14 @@
         p {
             padding-bottom: 10px;
         }
+        a {
+            text-decoration: none;
+            color: $black-background;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+        
     }
 }

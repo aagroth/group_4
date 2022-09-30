@@ -356,4 +356,11 @@ p, a {
 }
 .posts-wrapper__text p {
   padding-bottom: 10px;
+}
+.posts-wrapper__text a {
+  text-decoration: none;
+  color: #353434;
+}
+.posts-wrapper__text a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

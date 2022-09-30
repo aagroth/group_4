@@ -27,7 +27,7 @@
                         <h3><?php the_title() ?></h3>
                         <p><?php the_excerpt() ?></p>
                         <a href="<?php the_permalink(); ?>">
-                            <p>READ MORE</p>
+                            READ MORE
                         </a>
                     </div>
                 </div>
