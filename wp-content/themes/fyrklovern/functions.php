@@ -70,3 +70,13 @@ function create_posttype() {
   // Add theme support for post image 
   add_theme_support('post-thumbnails');
 
+  // Customize the excerpt for blogs 
+  function wpdocs_custom_excerpt_length() {
+    return 17;
+  }
+  add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+  function wpdocs_excerpt_more() {
+    return '';
+  }
+  add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
