@@ -106,7 +106,7 @@ function my_theme_wrapper_end()
 
 function mytheme_add_woocommerce_support() {
   add_theme_support( 'woocommerce', array(
-      'thumbnail_image_width' => 150,
+      'thumbnail_image_width' => 300,
       'single_image_width'    => 300,
 
       'product_grid'          => array(
@@ -121,4 +121,5 @@ function mytheme_add_woocommerce_support() {
 }
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
-add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+add_filter( 'woocommerce_enqueue_styles', '__return_false' ); 
+add_filter('woocommerce_show_page_title', '__return_false');
