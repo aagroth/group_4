@@ -48,6 +48,24 @@ function my_acf_init_block_types() {
             'icon'              => 'format-image',
             'keywords'          => array( 'fullwidth image block' ),
         ));
+        acf_register_block_type(array(
+          'name'              => 'info_block_image_left',
+          'title'             => __('Info block image left'),
+          'description'       => __('A block with a image and information'),
+          'render_template'   => 'page-blocks/info-block-image-left.php',
+          'category'          => 'formatting',
+          'icon'              => 'format-image',
+          'keywords'          => array( 'left image block' ),
+      ));
+      acf_register_block_type(array(
+        'name'              => 'info_block_image_right',
+        'title'             => __('Info block image right'),
+        'description'       => __('A block with a image and information'),
+        'render_template'   => 'page-blocks/info-block-image-right.php',
+        'category'          => 'formatting',
+        'icon'              => 'format-image',
+        'keywords'          => array( 'right image block' ),
+    ));
     }
 }
 
