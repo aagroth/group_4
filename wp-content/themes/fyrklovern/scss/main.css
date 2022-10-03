@@ -222,12 +222,24 @@ p, a {
   width: 100%;
   height: 436px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
+  background: #617C7C;
 }
-
+.fullwidth-image-block h2 {
+  text-align: center;
+  color: #353434;
+  margin-bottom: 40px;
+}
+.fullwidth-image-block p {
+  text-align: left;
+  color: #353434;
+  max-width: 60%;
+  margin-top: 40px;
+}
 .fullwidth-image-block img {
   position: absolute;
   top: 0;
@@ -236,28 +248,6 @@ p, a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.fullwidth-image-block h2 {
-  position: absolute;
-  top: 45%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 101;
-  text-align: center;
-  color: #353434;
-}
-
-.fullwidth-image-block p {
-  position: absolute;
-  top: 55%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 101;
-  text-align: center;
-  color: #353434;
 }
 
 .page-store-section {
@@ -440,4 +430,45 @@ p, a {
   color: #FFFFFF;
   align-items: right;
   margin-bottom: 100px;
+}
+
+.woocommerce-result-count {
+  padding-top: 100px;
+  margin-left: 15%;
+}
+
+.woocommerce-ordering {
+  margin-left: 15%;
+  padding-bottom: 100px;
+}
+
+.products {
+  display: grid;
+  justify-content: center;
+  grid-gap: 100px;
+  grid-template-columns: 460px 460px;
+  padding-bottom: 180px;
+  list-style: none;
+}
+.products li {
+  margin-bottom: 50px;
+}
+.products a:hover {
+  text-decoration: underline;
+}
+.products a {
+  text-decoration: none;
+  color: black;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.products a img {
+  width: 100%;
+  height: 320px;
+  padding-bottom: 20px;
+}
+.products a h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
