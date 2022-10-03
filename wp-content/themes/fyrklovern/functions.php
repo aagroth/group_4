@@ -48,6 +48,15 @@ function my_acf_init_block_types() {
             'icon'              => 'format-image',
             'keywords'          => array( 'fullwidth image block' ),
         ));
+        acf_register_block_type(array(
+          'name'              => 'product_category_block',
+          'title'             => __('Product category block'),
+          'description'       => __('A block that display product categories'),
+          'render_template'   => 'page-blocks/product-category-block.php',
+          'category'          => 'formatting',
+          'icon'              => 'format-image',
+          'keywords'          => array( 'product category block' ),
+      ));
     }
 }
 
