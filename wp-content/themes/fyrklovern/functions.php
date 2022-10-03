@@ -122,7 +122,9 @@ function mytheme_add_woocommerce_support() {
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 add_filter( 'woocommerce_enqueue_styles', '__return_false' ); 
-add_filter('woocommerce_show_page_title', '__return_false');
+// add_filter('woocommerce_show_page_title', '__return_false');
+add_filter( 'woocommerce_category_description_heading', '__return_false' );
+
 
 
 add_action( 'woocommerce_after_shop_loop_item', 'woo_show_excerpt_shop_page', 5 );
