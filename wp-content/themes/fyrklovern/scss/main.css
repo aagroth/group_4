@@ -2,7 +2,7 @@
 --------Different colors--------
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,100&family=Libre+Baskerville&family=Montserrat&display=swap");
-h2, h3 {
+h1, h2, h3 {
   font-family: "Libre Baskerville", serif;
 }
 
@@ -389,4 +389,149 @@ p, a {
 
 .post-hours {
   padding-top: 25px;
+}
+
+/* 
+--------Different colors--------
+*/
+.news-background-section {
+  background: #BFC7C7;
+}
+
+.news-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.news-info-text {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.news-info-text p {
+  width: 600px;
+}
+
+.news-content {
+  width: 500px;
+  margin: auto;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.posts-grid {
+  display: grid;
+  justify-content: center;
+  grid-gap: 20px;
+  grid-template-columns: 310px 310px 310px;
+  padding-bottom: 180px;
+}
+
+.posts-wrapper {
+  width: 300px;
+  height: 420px;
+  background: #FFFFFF;
+}
+.posts-wrapper__image img {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+}
+.posts-wrapper__text {
+  padding: 20px;
+}
+.posts-wrapper__text h2 {
+  padding-bottom: 10px;
+}
+.posts-wrapper__text p {
+  padding-bottom: 10px;
+}
+.posts-wrapper__text a {
+  text-decoration: none;
+  color: #353434;
+}
+.posts-wrapper__text a:hover {
+  text-decoration: underline;
+}
+
+.page-single__date {
+  display: flex;
+  justify-content: center;
+}
+.page-single__date p {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.page-single__title {
+  display: flex;
+  justify-content: center;
+}
+.page-single__title h1 {
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+.page-single__image {
+  width: 900px;
+  height: 520px;
+  margin: auto;
+}
+.page-single__image img {
+  width: 100%;
+  height: 100%;
+}
+.page-single__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-single__content p {
+  max-width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.page-single__content a {
+  display: none;
+}
+
+.contact-title {
+  display: flex;
+  justify-content: center;
+}
+.contact-title h1 {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.contact-content-wrapper p {
+  max-width: 700px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+#wpforms-186 {
+  margin: auto;
+  max-width: 800px;
+}
+
+.wpforms-field-medium {
+  min-width: 100%;
+}
+
+.wpforms-submit-container {
+  display: flex;
+  justify-content: right;
+}
+
+#wpforms-submit-186.wpforms-submit {
+  width: 161px;
+  background-color: #617C7C;
+  color: #FFFFFF;
+  align-items: right;
+  margin-bottom: 100px;
 }/*# sourceMappingURL=main.css.map */

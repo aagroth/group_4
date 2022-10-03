@@ -1,0 +1,36 @@
+.contact-title {
+    display: flex;
+    justify-content: center;
+    h1 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+
+.contact-content-wrapper {
+    p {
+        max-width: 700px;
+        margin: auto;
+        padding-bottom: 100px;
+    }
+}
+#wpforms-186 {
+    margin: auto;
+    max-width: 800px;
+}
+.wpforms-field-medium {
+      min-width: 100%;
+}
+.wpforms-submit-container {
+    display: flex;
+    justify-content: right;
+}
+
+#wpforms-submit-186.wpforms-submit {
+    width: 161px;
+    background-color: #617C7C;
+    color: #FFFFFF;
+    align-items: right;
+    margin-bottom: 100px;
+}
+ 
