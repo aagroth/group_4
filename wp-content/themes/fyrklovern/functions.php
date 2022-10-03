@@ -15,41 +15,59 @@ register_nav_menus(array('footer-menu-left' => 'Footer menu left'));
 
 // Iniziate acf blocks
 add_action('acf/init', 'my_acf_init_block_types');
-function my_acf_init_block_types()
-{
 
-  // Check function exists.
-  if (function_exists('acf_register_block_type')) {
+function my_acf_init_block_types() {
 
-    // register a hero block.
-    acf_register_block_type(array(
-      'name'              => 'hero',
-      'title'             => __('Hero'),
-      'description'       => __('A block for fullwidth hero image'),
-      'render_template'   => 'page-blocks/hero.php',
-      'category'          => 'formatting',
-      'icon'              => 'format-image',
-      'keywords'          => array('hero', 'heroimage'),
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // register a hero block.
+        acf_register_block_type(array(
+            'name'              => 'hero',
+            'title'             => __('Hero'),
+            'description'       => __('A block for fullwidth hero image'),
+            'render_template'   => 'page-blocks/hero.php',
+            'category'          => 'formatting',
+            'icon'              => 'format-image',
+            'keywords'          => array( 'hero', 'heroimage' ),
+        ));
+        acf_register_block_type(array(
+            'name'              => 'info_block',
+            'title'             => __('Info block'),
+            'description'       => __('A block for with heading and paragraph'),
+            'render_template'   => 'page-blocks/info-block.php',
+            'category'          => 'formatting',
+            'icon'              => 'format-image',
+            'keywords'          => array( 'info block' ),
+        ));
+        acf_register_block_type(array(
+            'name'              => 'fullwidth_image_block',
+            'title'             => __('Fullwidth image block'),
+            'description'       => __('A block with a fullwidth image with heading and paragraph'),
+            'render_template'   => 'page-blocks/fullwidth-image-block.php',
+            'category'          => 'formatting',
+            'icon'              => 'format-image',
+            'keywords'          => array( 'fullwidth image block' ),
+        ));
+        acf_register_block_type(array(
+          'name'              => 'info_block_image_left',
+          'title'             => __('Info block image left'),
+          'description'       => __('A block with a image and information'),
+          'render_template'   => 'page-blocks/info-block-image-left.php',
+          'category'          => 'formatting',
+          'icon'              => 'format-image',
+          'keywords'          => array( 'left image block' ),
+      ));
+      acf_register_block_type(array(
+        'name'              => 'info_block_image_right',
+        'title'             => __('Info block image right'),
+        'description'       => __('A block with a image and information'),
+        'render_template'   => 'page-blocks/info-block-image-right.php',
+        'category'          => 'formatting',
+        'icon'              => 'format-image',
+        'keywords'          => array( 'right image block' ),
     ));
-    acf_register_block_type(array(
-      'name'              => 'info_block',
-      'title'             => __('Info block'),
-      'description'       => __('A block for with heading and paragraph'),
-      'render_template'   => 'page-blocks/info-block.php',
-      'category'          => 'formatting',
-      'icon'              => 'format-image',
-      'keywords'          => array('info block'),
-    ));
-    acf_register_block_type(array(
-      'name'              => 'fullwidth_image_block',
-      'title'             => __('Fullwidth image block'),
-      'description'       => __('A block with a fullwidth image with heading and paragraph'),
-      'render_template'   => 'page-blocks/fullwidth-image-block.php',
-      'category'          => 'formatting',
-      'icon'              => 'format-image',
-      'keywords'          => array('fullwidth image block'),
-    ));
-  }
+    }
 }
 
 // Create custom post types 
