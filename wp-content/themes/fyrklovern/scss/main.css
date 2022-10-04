@@ -404,13 +404,10 @@ p, a {
   align-items: center;
 }
 .product-block__container {
-  height: 70%;
-  width: 70%;
-}
-.product-block__container img {
-  width: 100%;
   height: 100%;
-  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .product-block__info {
   width: 50%;
