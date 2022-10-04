@@ -16,6 +16,7 @@ register_nav_menus(array('footer-menu-left' => 'Footer menu left'));
 // Iniziate acf blocks
 add_action('acf/init', 'my_acf_init_block_types');
 
+
 function my_acf_init_block_types() {
 
   // Check function exists.
@@ -48,6 +49,41 @@ function my_acf_init_block_types() {
         'category'          => 'formatting',
         'icon'              => 'format-image',
         'keywords'          => array( 'fullwidth image block' ),
+=======
+function my_acf_init_block_types()
+{
+
+  // Check function exists.
+  if (function_exists('acf_register_block_type')) {
+
+    // register a hero block.
+    acf_register_block_type(array(
+      'name'              => 'hero',
+      'title'             => __('Hero'),
+      'description'       => __('A block for fullwidth hero image'),
+      'render_template'   => 'page-blocks/hero.php',
+      'category'          => 'formatting',
+      'icon'              => 'format-image',
+      'keywords'          => array('hero', 'heroimage'),
+    ));
+    acf_register_block_type(array(
+      'name'              => 'info_block',
+      'title'             => __('Info block'),
+      'description'       => __('A block for with heading and paragraph'),
+      'render_template'   => 'page-blocks/info-block.php',
+      'category'          => 'formatting',
+      'icon'              => 'format-image',
+      'keywords'          => array('info block'),
+    ));
+    acf_register_block_type(array(
+      'name'              => 'fullwidth_image_block',
+      'title'             => __('Fullwidth image block'),
+      'description'       => __('A block with a fullwidth image with heading and paragraph'),
+      'render_template'   => 'page-blocks/fullwidth-image-block.php',
+      'category'          => 'formatting',
+      'icon'              => 'format-image',
+      'keywords'          => array('fullwidth image block'),
+
     ));
     acf_register_block_type(array(
       'name'              => 'product_category_block',
@@ -56,7 +92,9 @@ function my_acf_init_block_types() {
       'render_template'   => 'page-blocks/product-category-block.php',
       'category'          => 'formatting',
       'icon'              => 'format-image',
+
       'keywords'          => array( 'product category block' ),
+
     ));
     acf_register_block_type(array(
       'name'              => 'info_block_image_left',
@@ -65,7 +103,9 @@ function my_acf_init_block_types() {
       'render_template'   => 'page-blocks/info-block-image-left.php',
       'category'          => 'formatting',
       'icon'              => 'format-image',
+
       'keywords'          => array( 'left image block' ),
+
     ));
     acf_register_block_type(array(
       'name'              => 'info_block_image_right',
@@ -74,6 +114,7 @@ function my_acf_init_block_types() {
       'render_template'   => 'page-blocks/info-block-image-right.php',
       'category'          => 'formatting',
       'icon'              => 'format-image',
+
       'keywords'          => array( 'right image block' ),
     ));
     acf_register_block_type(array(
@@ -93,6 +134,18 @@ function my_acf_init_block_types() {
       'category'          => 'formatting',
       'icon'              => 'format-image',
       'keywords'          => array( 'recommended products block' ),
+
+      'keywords'          => array('right image block'),
+    ));
+    acf_register_block_type(array(
+      'name'              => 'product_block_image_left',
+      'title'             => __('Product block image left'),
+      'description'       => __('A block with a product and information'),
+      'render_template'   => 'page-blocks/product-block-image-left.php',
+      'category'          => 'formatting',
+      'icon'              => 'format-image',
+      'keywords'          => array('product image block'),
+
     ));
   }
 }
@@ -149,32 +202,50 @@ function my_theme_wrapper_end()
   echo '</section>';
 }
 
-function mytheme_add_woocommerce_support() {
-  add_theme_support( 'woocommerce', array(
-      'thumbnail_image_width' => 300,
-      'single_image_width'    => 300,
+function mytheme_add_woocommerce_support()
+{
+  add_theme_support('woocommerce', array(
+    'thumbnail_image_width' => 300,
+    'single_image_width'    => 300,
 
-      'product_grid'          => array(
-          'default_rows'    => 3,
-          'min_rows'        => 2,
-          'max_rows'        => 8,
-          'default_columns' => 4,
-          'min_columns'     => 2,
-          'max_columns'     => 5,
-      ),
-  ) );
+    'product_grid'          => array(
+      'default_rows'    => 3,
+      'min_rows'        => 2,
+      'max_rows'        => 8,
+      'default_columns' => 4,
+      'min_columns'     => 2,
+      'max_columns'     => 5,
+    ),
+  ));
 }
 
-add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
-add_filter( 'woocommerce_enqueue_styles', '__return_false' ); 
+add_action('after_setup_theme', 'mytheme_add_woocommerce_support');
+add_filter('woocommerce_enqueue_styles', '__return_false');
 // add_filter('woocommerce_show_page_title', '__return_false');
-add_filter( 'woocommerce_category_description_heading', '__return_false' );
+add_filter('woocommerce_category_description_heading', '__return_false');
+add_filter( 'woocommerce_show_page_title', '__return_false' ); 
+add_action( 'woocommerce_archive_description', 'begining_of_header', 1 );
+add_action( 'woocommerce_archive_description', 'end_of_header' );
+
+
+function begining_of_header() {
+  echo "<div class='woocommerceHeader'>";
+
+  echo "<h1 class='page-title'>";
+  echo woocommerce_page_title();
+  echo "</h1>";
+
+}
+function end_of_header() {
+  echo "</div>";
+}
 
 
 
-add_action( 'woocommerce_after_shop_loop_item', 'woo_show_excerpt_shop_page', 5 );
-function woo_show_excerpt_shop_page() {
-	global $product;
+add_action('woocommerce_after_shop_loop_item', 'woo_show_excerpt_shop_page', 5);
+function woo_show_excerpt_shop_page()
+{
+  global $product;
 
-	echo $product->post->post_excerpt;
+  echo $product->post->post_excerpt;
 }
