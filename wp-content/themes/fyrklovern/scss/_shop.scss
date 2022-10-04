@@ -5,8 +5,16 @@
   margin-left: 15%;
 }
 .woocommerce-ordering {
+  margin-top: 5px;
   margin-left: 15%;
   padding-bottom: 100px;
+  select {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
 }
 
 .products {
@@ -46,6 +54,7 @@
   align-items: center;
   p {
     max-width: 700px;
+    color: #353434;
 } 
 }
 .page-title {
@@ -54,10 +63,11 @@
 }
 .woocommerceHeader {
   padding: 100px 0; 
-  background: $dark-green-background;
+  background: $light-green-background;
   min-height: 375px;
     h1 {
       padding-bottom: 20px;
+      color: #353434;
     }
 
 }
