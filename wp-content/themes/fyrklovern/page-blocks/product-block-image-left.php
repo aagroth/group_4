@@ -1,5 +1,3 @@
-
-
 <div class="product-block">
     <div class="product-block__image">
         <div class="product-block__container">

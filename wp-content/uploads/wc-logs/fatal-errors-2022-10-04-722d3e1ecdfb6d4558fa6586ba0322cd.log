@@ -129,3 +129,5 @@ Stack trace:
 #13 {main}
   thrown in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page-blocks/product-block-image-left.php on line 7
 
+2022-10-04T10:23:26+00:00 CRITICAL syntax error, unexpected token "===", expecting ")" in C:\MAMP\htdocs\fyrklovern\wp-content\themes\fyrklovern\functions.php on line 52
+
