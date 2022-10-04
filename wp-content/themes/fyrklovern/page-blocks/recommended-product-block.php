@@ -9,12 +9,17 @@ $products = wc_get_products( $args );
 <div class="category-wrapper">
 
     <div class="category-heading">
-        <h2>
-            <?php the_field("title"); ?>
-        </h2>
-        <p>
-            <?php the_field("description"); ?>
-        </p>
+        <div>
+            <h2>
+                <?php the_field("title"); ?>
+            </h2>
+            <p>
+                <?php the_field("description"); ?>
+            </p>
+        </div>
+        <div>
+            
+        </div>
     </div>  
 
     <div class="category-container">  

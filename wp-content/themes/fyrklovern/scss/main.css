@@ -4,10 +4,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,100&family=Libre+Baskerville&family=Montserrat&display=swap");
 h1, h2, h3 {
   font-family: "Libre Baskerville", serif;
+  color: #353434;
 }
 
 p, a {
   font-family: "Montserrat", sans-serif;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+  color: #353434;
 }
 
 * {
@@ -239,7 +245,6 @@ p, a {
   position: relative;
   background: #617C7C;
   top: 0;
-  margin-bottom: 50px;
 }
 .fullwidth-image-block h2 {
   text-align: center;
@@ -257,7 +262,7 @@ p, a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 436px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -374,7 +379,7 @@ p, a {
   display: grid;
   justify-content: center;
   grid-gap: 5rem 10rem;
-  grid-template-columns: 440px 440px;
+  grid-template-columns: 540px 540px;
   padding-bottom: 100px;
   list-style: none;
 }
@@ -385,12 +390,14 @@ p, a {
   display: grid;
   justify-content: center;
   grid-gap: 5rem 10rem;
-  grid-template-columns: 440px 440px;
+  grid-template-columns: 540px 540px;
   padding-bottom: 100px;
   list-style: none;
 }
 .category-wrapper .category-container .category-inner img {
-  width: 480px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .category-wrapper .category-container .category-inner .category-text {
   margin-top: 10px;
@@ -608,7 +615,8 @@ p, a {
   padding-bottom: 100px;
 }
 
-#wpforms-186 {
+#wpforms-form-170 {
+  padding-top: 30px;
   margin: auto;
   max-width: 800px;
 }
@@ -622,7 +630,7 @@ p, a {
   justify-content: right;
 }
 
-#wpforms-submit-186.wpforms-submit {
+#wpforms-submit-170.wpforms-submit {
   width: 161px;
   background-color: #617C7C;
   color: #FFFFFF;
@@ -704,4 +712,16 @@ p, a {
 .woocommerceHeader h1 {
   padding-bottom: 20px;
   color: #353434;
+}
+
+.woocommerce-cart-form {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attachment-woocommerce_thumbnail .size-woocommerce_thumbnail {
+  max-width: 150px;
+  max-height: 150px;
 }/*# sourceMappingURL=main.css.map */
