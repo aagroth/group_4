@@ -111,7 +111,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "all"
+                "value": "acf\/product-block-image-left"
             }
         ]
     ],
@@ -123,5 +123,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1664879500
+    "modified": 1664880327
 }
