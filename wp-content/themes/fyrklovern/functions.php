@@ -16,6 +16,40 @@ register_nav_menus(array('footer-menu-left' => 'Footer menu left'));
 // Iniziate acf blocks
 add_action('acf/init', 'my_acf_init_block_types');
 
+
+function my_acf_init_block_types() {
+
+  // Check function exists.
+  if( function_exists('acf_register_block_type') ) {
+
+    // register a hero block.
+    acf_register_block_type(array(
+        'name'              => 'hero',
+        'title'             => __('Hero'),
+        'description'       => __('A block for fullwidth hero image'),
+        'render_template'   => 'page-blocks/hero.php',
+        'category'          => 'formatting',
+        'icon'              => 'format-image',
+        'keywords'          => array( 'hero', 'heroimage' ),
+    ));
+    acf_register_block_type(array(
+        'name'              => 'info_block',
+        'title'             => __('Info block'),
+        'description'       => __('A block for with heading and paragraph'),
+        'render_template'   => 'page-blocks/info-block.php',
+        'category'          => 'formatting',
+        'icon'              => 'format-image',
+        'keywords'          => array( 'info block' ),
+    ));
+    acf_register_block_type(array(
+        'name'              => 'fullwidth_image_block',
+        'title'             => __('Fullwidth image block'),
+        'description'       => __('A block with a fullwidth image with heading and paragraph'),
+        'render_template'   => 'page-blocks/fullwidth-image-block.php',
+        'category'          => 'formatting',
+        'icon'              => 'format-image',
+        'keywords'          => array( 'fullwidth image block' ),
+=======
 function my_acf_init_block_types()
 {
 
@@ -49,6 +83,7 @@ function my_acf_init_block_types()
       'category'          => 'formatting',
       'icon'              => 'format-image',
       'keywords'          => array('fullwidth image block'),
+
     ));
     acf_register_block_type(array(
       'name'              => 'product_category_block',
@@ -57,7 +92,9 @@ function my_acf_init_block_types()
       'render_template'   => 'page-blocks/product-category-block.php',
       'category'          => 'formatting',
       'icon'              => 'format-image',
-      'keywords'          => array('product category block'),
+
+      'keywords'          => array( 'product category block' ),
+
     ));
     acf_register_block_type(array(
       'name'              => 'info_block_image_left',
@@ -66,7 +103,9 @@ function my_acf_init_block_types()
       'render_template'   => 'page-blocks/info-block-image-left.php',
       'category'          => 'formatting',
       'icon'              => 'format-image',
-      'keywords'          => array('left image block'),
+
+      'keywords'          => array( 'left image block' ),
+
     ));
     acf_register_block_type(array(
       'name'              => 'info_block_image_right',
@@ -75,6 +114,27 @@ function my_acf_init_block_types()
       'render_template'   => 'page-blocks/info-block-image-right.php',
       'category'          => 'formatting',
       'icon'              => 'format-image',
+
+      'keywords'          => array( 'right image block' ),
+    ));
+    acf_register_block_type(array(
+      'name'              => 'recommended_category_block',
+      'title'             => __('Recommended category block'),
+      'description'       => __('A block that display product categories'),
+      'render_template'   => 'page-blocks/recommended-category-block.php',
+      'category'          => 'formatting',
+      'icon'              => 'format-image',
+      'keywords'          => array( 'recommended category block' ),
+    ));
+    acf_register_block_type(array(
+      'name'              => 'recommended_products_block',
+      'title'             => __('Recommended products block'),
+      'description'       => __('A block that display two recommended products'),
+      'render_template'   => 'page-blocks/recommended-product-block.php',
+      'category'          => 'formatting',
+      'icon'              => 'format-image',
+      'keywords'          => array( 'recommended products block' ),
+
       'keywords'          => array('right image block'),
     ));
     acf_register_block_type(array(
@@ -85,6 +145,7 @@ function my_acf_init_block_types()
       'category'          => 'formatting',
       'icon'              => 'format-image',
       'keywords'          => array('product image block'),
+
     ));
   }
 }

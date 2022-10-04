@@ -370,6 +370,10 @@ p, a {
   padding-bottom: 100px;
   list-style: none;
 }
+.category-wrapper .category-container .category-inner img {
+  width: 480px;
+  height: 320px;
+}
 .category-wrapper .category-container .category-inner .category-text {
   margin-top: 10px;
 }
