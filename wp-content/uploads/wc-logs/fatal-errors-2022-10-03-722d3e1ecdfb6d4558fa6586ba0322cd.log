@@ -18,3 +18,15 @@ Stack trace:
 
 2022-10-03T15:20:18+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/woocommerce.php on line 23
 
+2022-10-03T19:29:48+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\MAMP\htdocs\fyrklovern\wp-content\themes\fyrklovern\page-blocks\recommended-product-block.php:34
+Stack trace:
+#0 C:\MAMP\htdocs\fyrklovern\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(390): include()
+#1 C:\MAMP\htdocs\fyrklovern\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(327): acf_render_block(Array, '', true, '12', NULL)
+#2 C:\MAMP\htdocs\fyrklovern\wp-content\plugins\advanced-custom-fields-pro\pro\blocks.php(612): acf_rendered_block(Array, '', true, '12')
+#3 C:\MAMP\htdocs\fyrklovern\wp-includes\class-wp-hook.php(307): acf_ajax_fetch_block('')
+#4 C:\MAMP\htdocs\fyrklovern\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\MAMP\htdocs\fyrklovern\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#6 C:\MAMP\htdocs\fyrklovern\wp-admin\admin-ajax.php(187): do_action('wp_ajax_acf/aja...')
+#7 {main}
+  thrown in C:\MAMP\htdocs\fyrklovern\wp-content\themes\fyrklovern\page-blocks\recommended-product-block.php on line 34
+

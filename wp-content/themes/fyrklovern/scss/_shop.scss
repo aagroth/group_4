@@ -1,3 +1,5 @@
+@import "./variables";
+
 .woocommerce-result-count {
   padding-top: 100px;
   margin-left: 15%;
@@ -39,21 +41,23 @@
 }
 .term-description {
   position: relative;
-  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #617c7c;
-  z-index: 100;
-  margin-top: 0;
   p {
     max-width: 700px;
 } 
 }
 .page-title {
-  position: relative;
-  top: 5rem;
-  z-index: 101;
+  position: relative; 
   text-align: center;
-  background: #617c7c;;
+}
+.woocommerceHeader {
+  padding: 100px 0; 
+  background: $dark-green-background;
+  min-height: 375px;
+    h1 {
+      padding-bottom: 20px;
+    }
+
 }

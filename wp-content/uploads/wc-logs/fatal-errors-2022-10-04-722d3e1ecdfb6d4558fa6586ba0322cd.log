@@ -1,0 +1,131 @@
+2022-10-04T08:09:47+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:85
+Stack trace:
+#0 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php(85): implode(', ', Array)
+#1 /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page-blocks/product-block-image-left.php(12): the_field('category_link')
+#2 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(390): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(327): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#4 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(307): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#5 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#6 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(902): WP_Block->render()
+#7 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(940): render_block(Array)
+#8 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-hook.php(307): do_blocks('<!-- wp:acf/ful...')
+#9 /Applications/MAMP/htdocs/fyrklovern/wp-includes/plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/ful...', Array)
+#10 /Applications/MAMP/htdocs/fyrklovern/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:acf/ful...')
+#11 /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page.php(3): the_content()
+#12 /Applications/MAMP/htdocs/fyrklovern/wp-includes/template-loader.php(106): include('/Applications/M...')
+#13 /Applications/MAMP/htdocs/fyrklovern/wp-blog-header.php(19): require_once('/Applications/M...')
+#14 /Applications/MAMP/htdocs/fyrklovern/index.php(17): require('/Applications/M...')
+#15 {main}
+  thrown in /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 85
+
+2022-10-04T09:01:26+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:89
+Stack trace:
+#0 /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page-blocks/product-block-image-left.php(24): the_field('superfield')
+#1 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(390): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(327): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(307): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#4 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#5 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(902): WP_Block->render()
+#6 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(940): render_block(Array)
+#7 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-hook.php(307): do_blocks('<!-- wp:acf/ful...')
+#8 /Applications/MAMP/htdocs/fyrklovern/wp-includes/plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/ful...', Array)
+#9 /Applications/MAMP/htdocs/fyrklovern/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:acf/ful...')
+#10 /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page.php(3): the_content()
+#11 /Applications/MAMP/htdocs/fyrklovern/wp-includes/template-loader.php(106): include('/Applications/M...')
+#12 /Applications/MAMP/htdocs/fyrklovern/wp-blog-header.php(19): require_once('/Applications/M...')
+#13 /Applications/MAMP/htdocs/fyrklovern/index.php(17): require('/Applications/M...')
+#14 {main}
+  thrown in /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 89
+
+2022-10-04T09:02:07+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:89
+Stack trace:
+#0 /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page-blocks/product-block-image-left.php(24): the_field('superfield')
+#1 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(390): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(327): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(307): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#4 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#5 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(902): WP_Block->render()
+#6 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(940): render_block(Array)
+#7 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-hook.php(307): do_blocks('<!-- wp:acf/ful...')
+#8 /Applications/MAMP/htdocs/fyrklovern/wp-includes/plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/ful...', Array)
+#9 /Applications/MAMP/htdocs/fyrklovern/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:acf/ful...')
+#10 /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page.php(3): the_content()
+#11 /Applications/MAMP/htdocs/fyrklovern/wp-includes/template-loader.php(106): include('/Applications/M...')
+#12 /Applications/MAMP/htdocs/fyrklovern/wp-blog-header.php(19): require_once('/Applications/M...')
+#13 /Applications/MAMP/htdocs/fyrklovern/index.php(17): require('/Applications/M...')
+#14 {main}
+  thrown in /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 89
+
+2022-10-04T09:02:18+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:89
+Stack trace:
+#0 /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page-blocks/product-block-image-left.php(4): the_field('superfield')
+#1 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(390): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(327): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(307): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#4 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#5 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(902): WP_Block->render()
+#6 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(940): render_block(Array)
+#7 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-hook.php(307): do_blocks('<!-- wp:acf/ful...')
+#8 /Applications/MAMP/htdocs/fyrklovern/wp-includes/plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/ful...', Array)
+#9 /Applications/MAMP/htdocs/fyrklovern/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:acf/ful...')
+#10 /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page.php(3): the_content()
+#11 /Applications/MAMP/htdocs/fyrklovern/wp-includes/template-loader.php(106): include('/Applications/M...')
+#12 /Applications/MAMP/htdocs/fyrklovern/wp-blog-header.php(19): require_once('/Applications/M...')
+#13 /Applications/MAMP/htdocs/fyrklovern/index.php(17): require('/Applications/M...')
+#14 {main}
+  thrown in /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 89
+
+2022-10-04T09:56:02+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on null in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page-blocks/product-block-image-left.php:5
+Stack trace:
+#0 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(390): include()
+#1 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(327): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#2 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(307): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-hook.php(307): do_blocks('<!-- wp:acf/ful...')
+#7 /Applications/MAMP/htdocs/fyrklovern/wp-includes/plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/ful...', Array)
+#8 /Applications/MAMP/htdocs/fyrklovern/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:acf/ful...')
+#9 /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page.php(3): the_content()
+#10 /Applications/MAMP/htdocs/fyrklovern/wp-includes/template-loader.php(106): include('/Applications/M...')
+#11 /Applications/MAMP/htdocs/fyrklovern/wp-blog-header.php(19): require_once('/Applications/M...')
+#12 /Applications/MAMP/htdocs/fyrklovern/index.php(17): require('/Applications/M...')
+#13 {main}
+  thrown in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page-blocks/product-block-image-left.php on line 5
+
+2022-10-04T10:07:27+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_title() in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page-blocks/product-block-image-left.php:7
+Stack trace:
+#0 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(390): include()
+#1 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(327): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#2 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(307): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-hook.php(307): do_blocks('<!-- wp:acf/ful...')
+#7 /Applications/MAMP/htdocs/fyrklovern/wp-includes/plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/ful...', Array)
+#8 /Applications/MAMP/htdocs/fyrklovern/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:acf/ful...')
+#9 /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page.php(3): the_content()
+#10 /Applications/MAMP/htdocs/fyrklovern/wp-includes/template-loader.php(106): include('/Applications/M...')
+#11 /Applications/MAMP/htdocs/fyrklovern/wp-blog-header.php(19): require_once('/Applications/M...')
+#12 /Applications/MAMP/htdocs/fyrklovern/index.php(17): require('/Applications/M...')
+#13 {main}
+  thrown in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page-blocks/product-block-image-left.php on line 7
+
+2022-10-04T10:07:45+00:00 CRITICAL Uncaught Error: Call to undefined function post_title() in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page-blocks/product-block-image-left.php:7
+Stack trace:
+#0 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(390): include()
+#1 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(327): acf_render_block(Array, '', false, 12, Object(WP_Block))
+#2 /Applications/MAMP/htdocs/fyrklovern/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(307): acf_rendered_block(Array, '', false, 12, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/fyrklovern/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs/fyrklovern/wp-includes/class-wp-hook.php(307): do_blocks('<!-- wp:acf/ful...')
+#7 /Applications/MAMP/htdocs/fyrklovern/wp-includes/plugin.php(191): WP_Hook->apply_filters('<!-- wp:acf/ful...', Array)
+#8 /Applications/MAMP/htdocs/fyrklovern/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:acf/ful...')
+#9 /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page.php(3): the_content()
+#10 /Applications/MAMP/htdocs/fyrklovern/wp-includes/template-loader.php(106): include('/Applications/M...')
+#11 /Applications/MAMP/htdocs/fyrklovern/wp-blog-header.php(19): require_once('/Applications/M...')
+#12 /Applications/MAMP/htdocs/fyrklovern/index.php(17): require('/Applications/M...')
+#13 {main}
+  thrown in /Applications/MAMP/htdocs/fyrklovern/wp-content/themes/fyrklovern/page-blocks/product-block-image-left.php on line 7
+
