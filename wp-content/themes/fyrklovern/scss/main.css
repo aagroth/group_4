@@ -25,6 +25,10 @@ p, a {
   background-color: #617C7C;
 }
 
+.wp-block-buttons.is-content-justification-center {
+  background-color: #BFC7C7;
+}
+
 /* 
 --------Different colors--------
 */
@@ -208,6 +212,7 @@ p, a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #BFC7C7;
 }
 
 .info-block-container h2 {
