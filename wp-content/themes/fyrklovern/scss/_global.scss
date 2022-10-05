@@ -17,3 +17,11 @@
 .wp-block-buttons.is-content-justification-center {
     background-color: $light-green-background;
 }
+
+.related {
+    display: none;
+
+    .products {
+        display: none;
+    }
+}

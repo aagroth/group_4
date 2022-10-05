@@ -1,0 +1,96 @@
+.single-product-wrapper-fyr {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+    .first-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .product-image-fyr {
+            width: 575px;
+            .wp-post-image {
+                width: 575px;
+                height: 531px;
+            }
+        }
+    
+        .summary { 
+            width: 435px;
+            padding-top: 100px;
+    
+            .entry-summary {
+        
+            }
+            h1 {
+                margin-bottom: 10px;
+            }
+
+            .price {
+                margin-bottom: 10px;
+            }
+
+            .woocommerce-product-details__short-description {
+                margin-bottom: 10px;
+            }
+
+            .variations {
+                tbody {
+                    tr {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+
+                        .label {
+                            text-align: start;
+                        }
+                    }
+                }
+                .woocommerce-product-label {
+                    padding: 10px;
+                }
+            }
+
+            .quantity {
+                margin-bottom: 10px;
+                
+                input {
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    .product_meta {
+        background-color: antiquewhite;
+        display: none;
+    }
+
+    .woocommerce-tabs {
+        .tabs {
+            display:none;
+        }
+
+        .wc-tabs-wrapper {
+        }
+
+    }
+
+    .second-wrapper {
+        display: flex;
+        justify-content: center;
+        .second-wrapper-content {
+            width: 1010px;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.single_add_to_cart_button {
+    width: 100px;
+    background-color: #617C7C;
+    color: #FFFFFF;
+    box-shadow: none;
+    padding: 5px;
+    border: none;
+}

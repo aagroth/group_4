@@ -35,6 +35,13 @@ label {
   background-color: #BFC7C7;
 }
 
+.related {
+  display: none;
+}
+.related .products {
+  display: none;
+}
+
 /* 
 --------Different colors--------
 */
@@ -714,14 +721,74 @@ label {
   color: #353434;
 }
 
-.woocommerce-cart-form {
+.single-product-wrapper-fyr {
   padding-top: 100px;
   display: flex;
+  flex-direction: column;
+}
+.single-product-wrapper-fyr .first-wrapper {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+}
+.single-product-wrapper-fyr .first-wrapper .product-image-fyr {
+  width: 575px;
+}
+.single-product-wrapper-fyr .first-wrapper .product-image-fyr .wp-post-image {
+  width: 575px;
+  height: 531px;
+}
+.single-product-wrapper-fyr .first-wrapper .summary {
+  width: 435px;
+  padding-top: 100px;
+}
+.single-product-wrapper-fyr .first-wrapper .summary h1 {
+  margin-bottom: 10px;
+}
+.single-product-wrapper-fyr .first-wrapper .summary .price {
+  margin-bottom: 10px;
+}
+.single-product-wrapper-fyr .first-wrapper .summary .woocommerce-product-details__short-description {
+  margin-bottom: 10px;
+}
+.single-product-wrapper-fyr .first-wrapper .summary .variations tbody tr {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.single-product-wrapper-fyr .first-wrapper .summary .variations tbody tr .label {
+  text-align: start;
+}
+.single-product-wrapper-fyr .first-wrapper .summary .variations .woocommerce-product-label {
+  padding: 10px;
+}
+.single-product-wrapper-fyr .first-wrapper .summary .quantity {
+  margin-bottom: 10px;
+}
+.single-product-wrapper-fyr .first-wrapper .summary .quantity input {
+  width: 100px;
+}
+.single-product-wrapper-fyr .product_meta {
+  background-color: antiquewhite;
+  display: none;
+}
+.single-product-wrapper-fyr .woocommerce-tabs .tabs {
+  display: none;
+}
+.single-product-wrapper-fyr .second-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.single-product-wrapper-fyr .second-wrapper .second-wrapper-content {
+  width: 1010px;
+  padding-bottom: 50px;
 }
 
-.attachment-woocommerce_thumbnail .size-woocommerce_thumbnail {
-  max-width: 150px;
-  max-height: 150px;
+.single_add_to_cart_button {
+  width: 100px;
+  background-color: #617C7C;
+  color: #FFFFFF;
+  box-shadow: none;
+  padding: 5px;
+  border: none;
 }/*# sourceMappingURL=main.css.map */
