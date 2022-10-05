@@ -791,4 +791,45 @@ label {
   box-shadow: none;
   padding: 5px;
   border: none;
+}
+
+.wrap {
+  padding-top: 100px;
+}
+
+.login-wrapper {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.login-wrapper h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.woocommerce-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.woocommerce-form .woocommerce-form-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+.woocommerce-form .woocommerce-form__label {
+  padding-bottom: 10px;
+}
+.woocommerce-form .form-row {
+  display: flex;
+  flex-direction: column;
+}
+.woocommerce-form .woocommerce-button {
+  width: 140px;
+  background-color: #617C7C;
+  color: #FFFFFF;
+  box-shadow: none;
+  padding: 5px;
+  border: none;
 }/*# sourceMappingURL=main.css.map */
