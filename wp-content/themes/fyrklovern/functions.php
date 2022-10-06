@@ -211,3 +211,13 @@ function woo_show_excerpt_shop_page()
 }
 
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+// unset fields for billing company and billing adress 2
+add_filter( 'woocommerce_checkout_fields' , 'remove_billing_fields_checkout' );
+ 
+function remove_billing_fields_checkout( $fields ) {
+    unset($fields['billing']['billing_company']);
+    unset($fields['billing']['billing_address_2']);
+
+  return $fields;
+}

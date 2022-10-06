@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,100&family=Libre+Baskerville&family=Montserrat&display=swap");
 h1, h2, h3 {
   font-family: "Libre Baskerville", serif;
-  color: #353434;
 }
 
 p, a {
@@ -948,4 +947,170 @@ label {
 
 .quantity input {
   max-width: 50px;
+}
+
+.cart-empty {
+  padding-top: 100px;
+}
+.cart-empty .woocommerce-info {
+  padding-top: 100px;
+}
+
+.woocommerce-message {
+  padding-top: 100px;
+}
+
+.woocommerce-form-coupon-toggle {
+  display: none;
+}
+
+.checkout-wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
+.woocommerce-billing-fields {
+  width: 400px;
+  margin-bottom: 50px;
+}
+.woocommerce-billing-fields h3 {
+  padding-bottom: 20px;
+}
+
+.woocommerce-shipping-fields {
+  margin-bottom: 50px;
+}
+
+.checkout.woocommerce-checkout {
+  padding-top: 100px;
+}
+
+.col-1 {
+  width: 600px;
+  height: 1200px;
+  padding: 40px;
+}
+
+.col-2 {
+  padding: 40px;
+  width: 600px;
+}
+
+.col2-set {
+  display: flex;
+}
+
+.woocommerce-additional-fields__field-wrapper p {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row.form-row-first.validate-required {
+  display: flex;
+  flex-direction: column;
+}
+.form-row.form-row-first.validate-required label {
+  padding-bottom: 10px;
+}
+.form-row.form-row-first.validate-required span input {
+  height: 35px;
+  width: 400px;
+  border: 2px solid #353434;
+  margin-bottom: 10px;
+}
+
+.form-row.form-row-last.validate-required {
+  display: flex;
+  flex-direction: column;
+}
+.form-row.form-row-last.validate-required label {
+  padding-bottom: 10px;
+}
+.form-row.form-row-last.validate-required span input {
+  height: 35px;
+  width: 400px;
+  border: 2px solid #353434;
+  margin-bottom: 10px;
+}
+
+.form-row.form-row-wide {
+  display: flex;
+  flex-direction: column;
+}
+.form-row.form-row-wide label {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.form-row.form-row-wide span input {
+  height: 35px;
+  width: 400px;
+  border: 2px solid #353434;
+  margin-bottom: 10px;
+}
+
+.selection {
+  width: 400px;
+}
+
+.select2-selection.select2-selection--single {
+  border: none;
+}
+
+.select2-selection__rendered {
+  border: 2px solid #353434;
+}
+
+.form-row.adress-field.validate-required.form-row-wide label {
+  padding-top: 10px;
+}
+
+.shop_table.woocommerce-checkout-review-order-table {
+  padding-top: 40px;
+}
+.shop_table.woocommerce-checkout-review-order-table thead {
+  display: none;
+}
+.shop_table.woocommerce-checkout-review-order-table tbody {
+  height: 100px;
+}
+.shop_table.woocommerce-checkout-review-order-table tbody tr {
+  margin-bottom: 20px;
+}
+.shop_table.woocommerce-checkout-review-order-table tfoot {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.shop_table.woocommerce-checkout-review-order-table tfoot tr th {
+  font-weight: bold;
+}
+.shop_table.woocommerce-checkout-review-order-table tfoot tr td {
+  font-weight: bold;
+}
+
+.product-name {
+  display: flex;
+  align-items: center;
+}
+
+.cart_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-total {
+  font-weight: bold;
+}
+
+.order-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.woocommerce-order {
+  padding-top: 100px;
 }/*# sourceMappingURL=main.css.map */
